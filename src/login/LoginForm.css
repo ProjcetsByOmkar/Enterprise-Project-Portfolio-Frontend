@@ -1,0 +1,187 @@
+
+.company-logo-mobile{
+  visibility: hidden;
+}
+
+.company-logo-login {
+  height: 76px;
+  width: 85px;
+  position: fixed;
+  left:721px;
+  top:77px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+  
+  .header{
+    height: 522px;
+  width: 1506px;
+  }
+
+  .headermobile{
+    visibility: hidden;
+  }
+  
+  .centered-text {
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 150px; /* Adjust this value as needed to position under the logo */
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 18px;
+  }
+  
+  .login-container {
+    position: relative;
+    padding: 25px;
+  height: 352px;
+  width: 385px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 7px 18px 0 rgba(2,118,179,0.13);
+  left: 500px;
+  top: 220px;
+  position: fixed;
+  }
+  
+  h5 {
+    height: 27px;
+  color: #3F3F3F;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 27px;
+  }
+  
+  /* Form inputs styling */
+  #email,
+  #password {
+    box-sizing: border-box;
+    height: 48px;
+    width: 370px;
+    border: 1px solid #979797;
+  border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .email,
+  .password{
+    height: 19px;
+    width: 34px;
+    color: #767676;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+  
+  .forgot {
+    align-self: flex-end;
+    color: #025AAB;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .logbtn {
+    Width:169px;
+    Height:36px;
+    border-radius: 18px;
+    background-color: #035FB2;
+  }
+  
+  .logbtn:hover {
+    background-color: #044E92; 
+  }
+  
+  .error {
+    color: #FF3838;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+  @media (max-width: 360px) {
+    /* For mobile devices */
+    .company-logo-mobile {
+      visibility: visible; /* Ensure visibility for mobile */
+    height: 76px;
+    width: 85px;
+    top: 85px; /* Adjust for better position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    position: absolute;
+    }
+
+    .company-logo-login{
+      visibility: hidden;
+    }
+
+    .header{
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+    .headermobile{
+      visibility: visible;
+      height: 300px;
+      width: 100vw;
+    }
+  
+    .centered-text {
+      color: white;
+    text-align: center;
+    position: fixed;
+      top: 70px;
+      width: 100vw;
+      left: 181px;
+    }
+
+    h5{
+      height: 27px;
+      width: 176px;
+      color: #3F3F3F;
+      font-family: "Nunito Sans";
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  
+    .login-container {
+      height: 27px;
+      width: 328px;
+      color: #3F3F3F;
+      font-family: "Nunito Sans";
+      font-size: 20px;
+      left: 0px;
+      top: 250px;
+      background-color: transparent;
+      margin-top: 40px;
+    }
+  
+    .logbtn {
+      height: 40px;
+      width: 100%;
+      font-size: 14px; /* Adjust button size for mobile */
+    }
+
+    #email,
+    #password {
+      box-sizing: border-box;
+      height: 48px;
+      width: 100%;
+      border: 1px solid #979797;
+      border-radius: 6px;
+    }
+  }

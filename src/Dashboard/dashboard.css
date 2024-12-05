@@ -1,0 +1,185 @@
+.company-logo {
+    display: block; /* Ensure it behaves like a block element */
+    margin: -150px ; /* Center it horizontally with some margin */
+    z-index: 3; /* Ensure it appears above other elements */
+    position: absolute; /* Positioning context for z-index */
+    height: 53px;
+    width: 60px;
+    top: 170px;
+    right: 900px;
+  }
+
+  .bgimage{
+    margin-left: 100px;
+  }
+
+  h2{
+    position: absolute;
+    left: 146px;
+    top: 10px;
+    color: white;
+  }
+
+/* Project stats section */
+.project-stats {
+    position: relative; /* Allows stacking over the oval */
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space out the items evenly */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-top: -60px; /* Adjust this value as needed to move stats up */
+    left: 97px;
+    width: 90vw;
+}
+
+/* Stat box styling */
+.stat-box {
+    height: 90px;
+    width: 200px;
+    background-color: #fff; /* White background for stat boxes */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    border-radius: 8px; /* Slightly larger rounded corners */
+    padding: 8px; /* Adjusted padding for better spacing */
+    text-align: left; /* Align text to the left */
+    border-left: 6px solid lightblue; /* Added left border with light blue color */
+    margin: 0px 7px; /* Added vertical margin for spacing between boxes */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.stat-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.stat-box h3 {
+    font-size: 16px; /* Larger heading */
+    margin-bottom: 10px; /* Margin below heading */
+    color: #474D52; /* Color for the heading */
+}
+
+.stat-box p {
+    font-size: 36px; /* Increased font size for values */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #474D52; /* Primary color for numbers */
+    margin: 0; /* Remove margin for better alignment */
+}
+
+/* Department-wise chart section */
+.bar-chart {
+    height: 387px;
+  width: 635px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #FFFFFF; /* White background */
+    box-shadow: 20px 20px 20px 20px rgba(2, 118, 179, 0.13); /* Light shadow */
+    margin-left: 106px; /* Match the position to the uploaded image */
+    padding: 20px; /* Padding inside the chart */
+    margin-left: 140px;
+    padding-bottom: 0px;
+  }
+  
+  
+
+/* Loading and error messages */
+.loading, .error-message {
+    font-size: 18px; /* Font size for messages */
+    color: #FF3838; /* Error color */
+    margin-top: 20px; /* Top margin for spacing */
+    text-align: center; /* Center align */
+}
+
+/* Chart header styles */
+h3 {
+    font-size: 20px; /* Font size for chart header */
+    color: #FFFFFF; /* White color for text */
+    margin-top: 20px; /* Top margin for spacing */
+}
+
+p{
+    margin-left: 146px;
+}
+
+
+@media (max-width: 480px) {
+    /* For small mobile devices */
+    .company-logo {
+        visibility: hidden;
+    }
+    
+    .bgimage {
+        height: 45px;
+        width: 337px;
+        position: relative;
+        margin-left: 5px;
+        margin-top: 8px;
+    }
+
+    /* Adjust heading */
+    h2 {
+        height: 27px;
+        width: 202px;
+        color: white;
+        font-family: "Nunito Sans";
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 27px;
+        left: 18px;
+        top: -2px;        
+        z-index: 1000;
+    }
+
+    .project-stats {
+        height: 100px; /* Reduced height */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: space-around; /* Space them evenly */
+        width: 337px; /* Ensure it takes the full width */
+        left: 10px;
+        top: 80px;
+        overflow-x: scroll;
+    }
+
+    .stat-box {
+        flex: 0 0 25%; /* Smaller width for each box */
+        margin-bottom: 10px; /* Reduced space below the stat boxes */
+        padding: 5px; /* Reduced padding inside the boxes */
+        height: 70px; /* Reduced height */
+    }
+
+    .stat-box h3 {
+        font-size: 9px; /* Smaller font for stat titles */
+        margin-bottom: 5px; /* Reduced margin below titles */
+    }
+
+    .stat-box p {
+        font-size: 20px; /* Smaller font for stat values */
+    }
+
+    .bar-chart {
+    position: fixed; /* Ensure it stays in the document flow */
+    height: 400px;
+    width: 328px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #FFFFFF; /* White background */
+    box-shadow: 0 7px 18px 0 rgba(2, 118, 179, 0.13); /* Light shadow */
+    margin-left: 10px;
+    padding: 0;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+
+    /* Adjust paragraph styles */
+    p {
+        margin-top: 180px; /* Add extra spacing below the stats for mobile */
+        padding-right: 0; /* Removed right padding */
+        font-size: 14px; /* Adjust font size for mobile */
+        text-align: left; /* Align text to the left */
+        color: #010202;
+        font-family: "Nunito Sans";
+        size: 16px;
+        line-height: 22px;
+        margin-left: 0; /* Remove left margin */
+        padding-left: 10px; /* Optional: Add some left padding for spacing from the edge */
+        font-weight: bold;
+        line-height: 22px;
+        margin-top: 105px;
+    }
+    
+}

@@ -1,0 +1,173 @@
+.project-container {
+    padding: 20px; /* Padding around the container */
+}
+
+.form-main {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background: white; /* White background for readability */
+    border-radius: 20px; /* Rounded corners */
+    width: 30cm;
+    top:-60px;
+    left: -70px;
+    margin: 0 auto; /* Center container */
+}
+
+.form-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove gaps between cells */
+}
+
+.form-table td {
+    padding: 10px; /* Add padding inside table cells */
+}
+
+.form-table label {
+    color: #767676;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+}
+
+.form-table input.textbox
+ {
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%; /* Full width for responsive design */
+    border: 1px solid #979797;
+    border-radius: 6px;
+}
+
+.form-table input,
+.form-table select {
+    box-sizing: border-box;
+    height: 48px;
+    width: 337px;
+    border: 1px solid #979797;
+    border-radius: 6px;
+}
+
+button {
+    border-radius: 18px; /* Consistent smaller rounded corners */
+    border: none;
+    background-color: blue; /* Primary button color */
+    color: white; /* White text */
+    padding: 10px 15px; /* Add padding for a better look */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add hover effect */
+    height: 36px;
+    width: 153px;
+}
+
+button:hover {
+    background-color: darkblue; /* Darken the button on hover */
+}
+
+.error {
+    color: red; /* Error message color */
+}
+
+.arrow{
+    padding-right: 20px;
+}
+
+.bgroundimage{
+    margin-left: 100px;
+}
+
+
+
+@media (max-width: 360px) {
+    .form-main {
+        width: 90%; /* Use a percentage width for mobile */
+        padding: 10px; /* Reduce padding on mobile */
+        top: 40px; /* Reset the top positioning */
+        display: flex;
+        flex-direction: column; /* Ensure form items are stacked vertically */
+        min-height: 100vh; /* Make sure the form occupies the full height of the viewport */
+        justify-content: flex-start; /* Align items at the top */
+        padding-bottom: 60px; /* Add bottom padding so content is not covered by button */
+        position: relative;
+        left: -15px;
+    }
+
+    .form-table {
+        width: 100%; /* Full width table */
+        display: block; /* Ensure the table is displayed as a block element */
+    }
+
+    .form-table tr {
+        display: block; /* Stack each row vertically */
+        margin-bottom: 10px; /* Add some spacing between rows */
+    }
+
+    .form-table td {
+        display: block; /* Stack each table cell vertically */
+        padding: 8px; /* Reduce padding for smaller screens */
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .form-table label {
+        font-size: 12px; /* Smaller font size for mobile */
+        margin-bottom: 5px; /* Add space between label and input */
+        display: block; /* Ensure labels are displayed above inputs */
+    }
+
+    .form-table input.textbox,
+    .form-table input,
+    .form-table select {
+        height: 48px;
+  width: 298px;
+        margin-bottom: 10px; /* Add space between inputs */
+        display: block; /* Ensure inputs are displayed as block elements */
+    }
+
+    /* Ensure status text is clearly visible */
+    .status-container {
+        margin-top: 10px;
+        margin-bottom: 30px; /* Add space between status and button */
+    }
+
+    /* Update button position to be relative to the form */
+    .btn-saveproject {
+        position: fixed; /* Fix the button at the bottom of the viewport */
+        bottom: 100px; /* Distance from the bottom */
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; /* Full width button on mobile */
+        height: 40px; /* Adjust button height */
+        font-size: 16px; /* Increase font size */
+        margin-top: 10px; /* Add space above button */
+    }
+
+    .arrow {
+        padding-right: 10px; /* Reduce padding for mobile */
+    }
+
+
+    .bgroundimage {
+        height: 55px;
+        width: 337px;
+        position: relative;
+        margin-left: 5px;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        height: 27px;
+        width: 302px;
+        color: white;
+        font-family: "Nunito Sans";
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 27px;
+        left: 18px;
+        top: -2px;        
+        z-index: 1000;
+    }
+}
+
